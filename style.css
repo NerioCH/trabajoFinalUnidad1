@@ -1,0 +1,363 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#index {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://www.pacuchaglamping.com/wp-content/uploads/2021/11/pacucha2.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+nav .logo img {
+    height: 50px;
+    vertical-align: middle;
+    filter: invert(1);
+}
+nav .logo h3 {
+    color: white;
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+nav {
+    margin-left: -10%;
+    margin-right: -10%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 80%;
+    background-color: rgba(54, 54, 54, 0.859);
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 0px;
+    padding-top: 1%;
+}
+nav ul {
+    margin-right: 0px;
+}
+nav ul li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    border-bottom: solid 2px white;
+    transition: all 1s ease;
+}
+nav ul li:hover {
+    background-color: rgba(198, 206, 199, 0.623);
+    transition: all 1s ease;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.tableIndex {
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: rgba(53, 255, 231, 0.821);
+    border-radius: 10px;
+    border: solid 5px white;
+}
+.tableIndex tr td {
+    padding: 10px;
+}
+
+.tableIndex img {
+    height: 100px;
+}
+
+button {
+    width: 100% auto;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(50, 149, 255);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.cuerpo {
+    margin-left: -10%;
+    margin-right: -10%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo table tr td h1 {
+    font-size: 10vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 2px white;
+}
+
+.cuerpo .dataUser {
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 2vh;
+    border: solid 1px white;
+    transition: all 1s ease;
+}
+
+.cuerpo .dataUser:hover {
+    background-color: rgba(255, 255, 255, 0.784);
+    color: black;
+    transition: all 1s ease;
+}
+
+
+.cuerpo table {
+    text-align: center;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+#comidas {
+    margin-left: -10%;
+    margin-right: -10%;
+    height: 100% auto;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-image: url('https://album.es/fotos/uploads/imagenes/thumbs/de-la-mano-por-la-montana-fondo-de-viajes-hofmann-classic_viajes-61-classic_1200px.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#comidas h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#comidas table {
+    background-color: none;
+    margin: 10%;
+}
+
+#comidas table tr {
+}
+
+#comidas img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.cardComidas {
+    display: flex;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: solid 5px rgb(97, 137, 105);
+}
+
+.cardComidas P {
+    margin: 5%;
+    text-align: center;
+}
+
+#contacto {
+    margin-left: -10%;
+    margin-right: -10%;
+    top: 200%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#contacto table{
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
+}
+
+#contacto table tr td {
+    padding: 5px
+}
+
+#contacto #respuesta {
+    background-color: rgba(20, 198, 20, 0.744);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#contacto input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(236, 246, 255);
+    color: rgb(42, 42, 172);
+    font-weight: bold;
+}
+
+#contacto table thead h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contacto tfoot {
+    text-align: right;
+}
+
+#datos {
+    margin-left: -10%;
+    margin-right: -10%;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(37, 38, 54);
+    position: absolute;
+}   
+#datos h2 {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#viajes {
+    margin-left: -10%;
+    margin-right: -10%;
+    height: 100% auto;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-image: url('https://album.es/fotos/uploads/imagenes/thumbs/de-la-mano-por-la-montana-fondo-de-viajes-hofmann-classic_viajes-61-classic_1200px.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#viajes h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#viajes img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cardViajes {
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 2px 2px 10px .05px rgba(0, 0, 0, 0.512);
+    color: white;
+}
+
+#viajes table {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#viajes table tr td{
+    padding: 10px;
+}
+
+.cardViajes h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.cardViajes p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#detallesViaje {
+    text-align: center;
+    background-image: url('https://fondosmil.com/fondo/36779.jpg');
+}
+
+#detallesViaje h2 {
+    color: white;
+}
+
+#detallesViaje #img {
+    height: 100%;
+    width: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#detallesViaje .tabla1 {
+    background-color: rgba(240, 248, 255, 0.356);
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+#detallesViaje #addComentario {
+    background-color: rgba(240, 248, 255, 0.356);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 2400px) {
+    #viajes table tr td {
+        display:inline-block;
+        padding:5px;
+        width:30%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+    #viajes table tr td {
+        display:inline-block;
+        padding:5px;
+        width:50%;
+    }
+}
+
+#addComentario {
+}
+
+#addComentario input {
+    border-radius: 5px;
+    border: none;
+}
+
+.comentarios{
+    width: 100%;
+}
+.comentarios label {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

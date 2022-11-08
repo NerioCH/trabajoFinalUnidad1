@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+</head>
+<body onload="cargarDatosViaje();" id="detallesViaje">
+    <nav>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/181/181698.png" alt=""> &nbsp; &nbsp;
+            <h3>Viajes y más</h3>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="viajes.html">Viajes</a>
+            </li>
+            <li>
+                <a href="comidas.html">Comidas</a>
+            </li>
+            <li>
+                <a href="index.html#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <table class="tabla1">
+        <tr>
+            <td>
+                <h2 id="nombre"></h2>
+                <textarea readonly name="descripcion" id="descripcion" cols="60" rows="15   "></textarea>
+            </td>
+            <td>
+                <div id="contenedor">
+                    <img alt="" id="img">
+                </div>
+            </td>
+        </tr>
+    </table> <br>
+
+    <table id="addComentario">
+        <tr>
+            <td colspan="2">
+                <h2>Realizar comentario</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Nombre" id="nombreComentario">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="realiza un comentario..."></textarea>
+            </td>
+            <td>
+                <button type="submit" onclick="comentar()">Comentar</button>
+            </td>
+        </tr>
+    </table>
+
+    <div class="comentarios">
+        <ul id="comentarios">
+            <script>
+                mostrarComentarios();
+            </script>
+        </ul>
+    </div>
+    <form action="viajes.html" method="post"> 
+        <button type="submit">Volver atras</button> 
+    </form> 
+</body>
+</html>

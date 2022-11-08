@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+</head>
+<body id="index">
+    <nav>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/181/181698.png" alt=""> &nbsp; &nbsp;
+            <h3>Viajes y más</h3>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="viajes.html">Viajes</a>
+            </li>
+            <li>
+                <a href="comidas.html">Comidas</a>
+            </li>
+            <li>
+                <a href="index.html#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="cuerpo">
+        <table>
+            <tr>
+                <td>
+                    <h1>PACUCHA</h1><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="dataUser" type="button" onclick="misDatos()">Cargar Datos</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="datos">
+        <h2>Mis datos personales</h2>
+        <table class="tableIndex">
+            <tr>
+                <td colspan="3">
+                    <h3 class="titulo">Mis datos</h3>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176151.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Nombres</label>
+                </td>
+                <td>
+                    <textarea id="nombre" readonly cols="30" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Apellidos</label>
+                </td>
+                <td>
+                    <textarea id="apellidos" readonly cols="30" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Celular</label>
+                </td>
+                <td>
+                    <textarea id="celular" readonly cols="30" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Correo</label>
+                </td>
+                <td>
+                    <textarea id="email" readonly cols="30" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button style="width: 100%;" class="dataUser" type="button" onclick="misDatos()">Cargar Datos</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="contacto">
+        <table>
+            <thead>
+                <td colspan="2">
+                    <h2>Formulario de contacto</h2>
+                </td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Nombres" id="nombres2">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Apellidos" id="apellidos2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Correo" id="correo2">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Celular" id="celular2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Comentario..."></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="contacto()">Enviar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea cols="50" rows="5" readonly id="respuesta"></textarea>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
